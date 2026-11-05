@@ -469,9 +469,9 @@ footer{background:#140807;color:rgba(255,246,234,.75);padding:56px 0 30px;font-s
         <p class="lead">Shadaj Graam Foundation is a non-profit on a mission to preserve and celebrate Indian classical music, and to carry it to the young people who need it most: in small towns and remote villages, far from the concert halls of big cities.</p>
         <p class="body">Indian classical music is one of the oldest living musical traditions in the world. Whether in the Hindustani style of the North or the Carnatic style of the South, it is built on the <b>raga</b>, a melodic framework that is part composition, part improvisation. For centuries it has been more than music: it is a spiritual journey that connects the performer, the listener and something higher.</p>
         <div class="stats">
-          <div class="stat"><b data-count="2">0</b><span>Years of music</span></div>
-          <div class="stat"><b data-count="7">0</b><span>Concerts so far</span></div>
-          <div class="stat"><b data-count="5">0</b><span>Towns &amp; cities</span></div>
+          <div class="stat"><b data-count="2">2</b><span>Years of music</span></div>
+          <div class="stat"><b data-count="7">7</b><span>Concerts so far</span></div>
+          <div class="stat"><b data-count="5">5</b><span>Towns &amp; cities</span></div>
         </div>
       </div>
       <div class="name-card reveal d2">
@@ -684,8 +684,8 @@ footer{background:#140807;color:rgba(255,246,234,.75);padding:56px 0 30px;font-s
   // sur notes falling across the hero
   var notes = document.getElementById('notes');
   var sur = ['सा','रे','ग','म','प','ध','नि','सां','♪','♫','♩','♬'];
-  var count = window.innerWidth < 700 ? 16 : 30;
-  for (var i = 0; i < count; i++) {
+  var noteCount = window.innerWidth < 700 ? 16 : 30;
+  for (var i = 0; i < noteCount; i++) {
     var n = document.createElement('span'), t = sur[i % sur.length];
     n.textContent = t; if (t.length === 1 && t.charCodeAt(0) > 9000) n.className = 'sym';
     n.style.left = (Math.random() * 96) + '%';
