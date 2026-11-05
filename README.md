@@ -48,6 +48,8 @@ Tip: in GoDaddy you can also create a free email forward like `info@yourdomain` 
   same name. To add a member, copy one `<div class="member …">…</div>` block in the *COMMITTEE* section.
 - **Countdown:** the live countdown in the Upcoming section points to 28 Dec 2026, 8:00 PM. For the next
   concert, change the date in the line `new Date('2026-12-28T20:00:00+05:30')` near the bottom of `index.html`.
+- **Concert photos:** each concert's photos are in `assets/gallery/` named `c1-1.jpg`, `c1-2.jpg` … (c1 = concert 1). The first photo is the cover; the card cycles through all photos and opens a full-screen viewer on tap.
+- **Share preview image:** `assets/og-image.jpg` is what WhatsApp/Facebook show when the link is shared.
 - **New concert:** copy one `<article class="concert">…</article>` block in the *Our Journey* section,
   change the photo, name, date and place, and upload the new photo into `assets/concerts/`.
 - **New upcoming concert:** edit the *Upcoming* section (poster file, title, date, venue, ticket link).
