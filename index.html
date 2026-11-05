@@ -11,14 +11,14 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Shadaj Graam Foundation">
 <meta property="og:url" content="https://shadajgraam.org/">
-<meta property="og:image" content="https://shadajgraam.org/og-image.jpg">
+<meta property="og:image" content="https://shadajgraam.org/og-image-v2.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Shadaj Graam Foundation – संगीतम् संस्कृतिः सङ्गमः">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Shadaj Graam Foundation">
 <meta name="twitter:description" content="Indian classical music concerts, young artists and music for a cause.">
-<meta name="twitter:image" content="https://shadajgraam.org/og-image.jpg">
+<meta name="twitter:image" content="https://shadajgraam.org/og-image-v2.jpg">
 <link rel="canonical" href="https://shadajgraam.org/">
 <link rel="icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -179,10 +179,12 @@ header.scrolled .brand img{height:42px}
 .wcard:hover .ic{transform:rotate(-10deg) scale(1.08)}
 .wcard h3{font-size:21px;margin-bottom:6px}
 .wcard p{font-size:14.5px;color:var(--muted)}
-.vision{position:relative;margin-top:70px;text-align:center;padding:56px 40px;border-radius:30px;background:linear-gradient(120deg,var(--orange),#C9481D);color:#fff;overflow:hidden;box-shadow:0 30px 70px rgba(232,100,44,.3)}
+.vision{position:relative;margin-top:70px;text-align:center;padding:72px 40px 96px;border-radius:30px;background:linear-gradient(120deg,var(--orange),#C9481D);color:#fff;overflow:hidden;box-shadow:0 30px 70px rgba(232,100,44,.3)}
+.vision .stage{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center bottom;opacity:.24;pointer-events:none}
+.vision:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center 45%,rgba(201,72,29,.55),rgba(201,72,29,0) 70%);pointer-events:none}
 .vision .q{position:absolute;left:30px;top:-30px;font-family:"Playfair Display",serif;font-size:220px;line-height:1;color:rgba(255,255,255,.15)}
-.vision p{position:relative;font-family:"Playfair Display",serif;font-style:italic;font-size:clamp(22px,2.6vw,32px);line-height:1.35;max-width:900px;margin:0 auto}
-.vision .dev{margin-top:18px;font-size:22px;color:#FFE3C2}
+.vision p{position:relative;z-index:1;font-family:"Playfair Display",serif;font-style:italic;font-size:clamp(22px,2.6vw,32px);line-height:1.35;max-width:900px;margin:0 auto}
+.vision .dev{position:relative;z-index:1;margin-top:18px;font-size:22px;color:#FFE3C2}
 
 /* ============ COMMITTEE ============ */
 .team{background:linear-gradient(180deg,var(--cream),#FBEAD6)}
@@ -362,7 +364,7 @@ footer{background:#140807;color:rgba(255,246,234,.75);padding:56px 0 30px;font-s
   .wgrid{grid-template-columns:1fr}
   .nc-row{flex-direction:column}.nc-plus{align-self:center;margin:-6px 0}
   .name-card{padding:30px 22px}.nc-eq{font-size:26px}
-  .vision{padding:44px 22px}.vision .q{font-size:150px;left:10px}
+  .vision{padding:48px 22px 120px}.vision .q{font-size:150px;left:10px}
   .contact-grid{grid-template-columns:1fr}
   .marquee .track span{font-size:18px}
 }
@@ -498,6 +500,7 @@ footer{background:#140807;color:rgba(255,246,234,.75);padding:56px 0 30px;font-s
     </div>
 
     <div class="vision reveal">
+      <img class="stage" src="vision-stage.svg" alt="" aria-hidden="true" loading="lazy">
       <span class="q">“</span>
       <p>Our vision is to make Indian classical music a living part of rural India's cultural fabric, nurturing the next generation of musicians and music lovers.</p>
       <div class="dev">संगीतम्&nbsp; संस्कृतिः&nbsp; सङ्गमः</div>
